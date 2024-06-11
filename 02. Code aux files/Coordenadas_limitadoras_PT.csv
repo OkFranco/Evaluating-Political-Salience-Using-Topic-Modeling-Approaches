@@ -1,0 +1,13 @@
+;PT_loc;long_lat;min_max;value
+0;Açores;long;min;-23.878099501752335
+1;Açores;long;max;-32.13981664994144
+2;Açores;lat;min;36.40865571440288
+3;Açores;lat;min;40.03242417506302
+4;Continente;long;min;-6.1892
+5;Continente;long;max;-9.5266
+6;Continente;lat;max;36.9613
+7;Continente;lat;max;42.1516
+8;Madeira;long;min;-15.956687057435827
+9;Madeira;long;max;-17.58296855648497
+10;Madeira;lat;min;32.444672105768596
+11;Madeira;lat;max;33.33934672259612

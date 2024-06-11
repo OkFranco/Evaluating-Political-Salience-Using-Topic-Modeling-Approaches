@@ -1,0 +1,19 @@
+##News
+1º Expresso_urls_script.py + CM_urls_script.py + Publico_urls_script.py via XXX.sh, XXX.sh, XXX.sh to collect all urls from each newspaper
+2º Urls_filtering.py via urls_filtering.sh to remove some of the urls that do not matter to us (eg.: easy to identify repeated urls and with endpoints that clearly are not important to us such as images)
+3º Urls_collect_text.py via urls_collect_text.sh to collect news text from the selected urls. Also created Urls_collect_text_parallalized.py via parallized_urls_collect_text.sh to collect more urls in parallel and speed up the process
+4º Urs_news_filtering_I.py via XXX.sh to filter out news that do not meet pre-specified such as text length or contain piece of text that were manually identified referring o no news (eg.: No article in noFrame, "encontrada (404) - Arquivo.pt")
+5º Urls_infer_date.py via XXX.sh to ensure that all news have an assigned publication date
+6º Urls_cleaning.py via XXX.sh to clean the news text, such as remove stopwords, lowecaser, check if containi intergenerational justice/sustainability related words
+7º Urls_news_filtering_II.py via XXX.sh to filter out news that considered repeated not only because the text is equal, but because is highly similar based on collection similarity from "Measuring News Similarity Across Ten U.S. News Sites" accessible via https://arxiv.org/pdf/1806.09082.pdf
+8º Run models they can be identified Topification_{source}_ scripts and .sh files with the same, but lowercased, following by the type of model such as: top2vec_use_uni,top2vec_use_bi,top2vec_doc2vec_uni,top2vec_doc2vec_bi,nmf. In nmf, you need to define the factorization matrixes shapes. In this case source=news
+
+
+##Tweets
+1º Tweets_collection.py via tweets.sh to collect all tweets
+2º Tweets_filtering.py and then Tweets_cleaning.py via tweets_filtering_cleaning.py to both filter out tweets that do not matter to us, such has located in Brazil, and clean text, such has remove stopwords
+3º Run models they can be identified Topification_{source}_ scripts and .sh files with the same, but lowercased, following by the type of model such as: top2vec_use_uni,top2vec_use_bi,top2vec_doc2vec_uni,top2vec_doc2vec_bi,nmf. In nmf, you need to define the factorization matrixes shapes. In this case source=tweets
+
+##Parliament
+1º Run models they can be identified Topification_{source}_ scripts and .sh files with the same, but lowercased, following by the type of model such as: top2vec_use_uni,top2vec_use_bi,top2vec_doc2vec_uni,top2vec_doc2vec_bi,nmf. In nmf, you need to define the factorization matrixes shapes. In this case source=parliament
+The documents words treated outside INCD
